@@ -1,7 +1,14 @@
+import { ThemeProvider } from "styled-components";
+import theme from "./style/theme";
+import RootRouter from "./route";
+
 function App() {
   return (
     <>
-      <div>me</div>
+      <ThemeProvider theme={theme}>
+        <div>me</div>
+        <RootRouter />
+      </ThemeProvider>
     </>
   );
 }
